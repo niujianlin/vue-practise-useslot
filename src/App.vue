@@ -70,7 +70,7 @@ export default {
         this.list = res.list
       }
     },
-    // 接收子组件传递过来的数据
+    // 接收Goods子组件传递过来的数据
     // e 的格式为 { id, value }
     getNewState(e) {
       this.list.some(item => {
