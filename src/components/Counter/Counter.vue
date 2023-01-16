@@ -24,7 +24,9 @@ export default {
       this.$emit('num-change', this.num + 1)
     },
     sub() {
-      this.$emit('num-change', this.num - 1)
+      if(this.num >1) {
+        this.$emit('num-change', this.num - 1)
+      }
     }
   }
 }
